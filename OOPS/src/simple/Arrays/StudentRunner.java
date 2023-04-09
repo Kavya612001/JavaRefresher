@@ -7,8 +7,12 @@ public class StudentRunner {
 
     public static void main(String[] args) {
 
-        Student student = new Student("Kavya", new int[]{100, 70, 80});
-        System.out.println("Marks array: " + Arrays.toString(student.getMarks()));
+        // Student student = new Student("Kavya", new int[]{100, 70, 80});
+        Student student = new Student("Kavya", 100, 70, 80);
+        Student student1 = new Student("Latha", 90, 98, 99);
+        Student student2 = new Student("Sampath", 90, 100);
+
+        System.out.println(student);
 
         int number = student.getNumberOfMarks();
         System.out.println("Number of marks in the array: " + number);
@@ -24,5 +28,11 @@ public class StudentRunner {
 
         BigDecimal average = student.getAverageMarks();
         System.out.println("Average mark: "+ average);
+
+        student.addNewMark(95);
+        System.out.println(student);
+
+        student.removeMarkAtIndex(1);
+        System.out.println(student);
     }
 }

@@ -17,7 +17,7 @@ public class MapExerciseRunner {
                 Integer val = map.get(sentenceArray[i]);
                 if(map.containsKey(sentenceArray[i])) {
                     map.put(sentenceArray[i], (val + 1) );
-                } else {       
+                } else {
                     map.put(sentenceArray[i], 1);
                 }
         }
